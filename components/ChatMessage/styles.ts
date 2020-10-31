@@ -14,7 +14,8 @@ const styles= StyleSheet.create(
         },
         message:{
             color: "white",
-            fontSize: 13
+            fontSize: 13,
+            padding: 4
 
         },
         timestamp:{

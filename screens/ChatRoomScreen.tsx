@@ -3,6 +3,7 @@ import { StyleSheet, Text, TouchableOpacity,FlatList, View } from 'react-native'
 import { useRoute} from "@react-navigation/native";
 import chatRoomData from '../data/Chats';
 import ChatMessage from '../components/ChatMessage';
+import Input from '../components/Input';
 
 
 
@@ -11,11 +12,11 @@ const ChatRoomScreen =() => {
   const route= useRoute();
   //console.log(route.params)
   return (
-    <FlatList
-    data={chatRoomData.messages}
-    renderItem={({item}) => <ChatMessage message={item}/>}
-    inverted
-    />
+    <><FlatList
+      data={chatRoomData.messages}
+      renderItem={({ item }) => <ChatMessage message={item} />}
+      inverted />
+      <Input /></>
   );
 }
 export default ChatRoomScreen;
