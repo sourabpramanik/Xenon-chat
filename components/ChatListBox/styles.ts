@@ -15,9 +15,6 @@ const style = StyleSheet.create(
             fontWeight: "bold",
             marginBottom: 5,
         },
-        subContainer: {
-
-        },
         mainContainer:{
             flexDirection: "row",
         },
