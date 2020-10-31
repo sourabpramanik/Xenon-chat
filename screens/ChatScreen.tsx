@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-
-import { Text, View } from '../components/Themed';
-
+import ChatListBox from '../components/ChatListBox'
+import { Text, View, FlatList } from 'react-native';
+import chatRooms from "../data/ChatRooms"
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      
+      <ChatListBox chatRoom={chatRooms[2]}/>
+
     </View>
   );
 }
