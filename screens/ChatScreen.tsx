@@ -6,7 +6,14 @@ import chatRooms from "../data/ChatRooms"
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <ChatListBox chatRoom={chatRooms[2]}/>
+      <FlatList
+        style={{width: "100%"}}
+        data={chatRooms}
+        renderItem={
+          ({item}) => <ChatListBox chatRoom={item}/>
+        }
+        keyExtractor={(item)=>item.id}
+      />
 
     </View>
   );

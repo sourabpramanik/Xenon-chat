@@ -3,11 +3,10 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create(
     {
         avatar: {
-            width: 69,
-            height: 69,
+            width: 50,
+            height: 50,
             borderRadius: 10,
-            borderColor: "#b30404",
-            borderWidth: 1,
+
             marginRight: 13
         },
         username: {
@@ -23,18 +22,22 @@ const style = StyleSheet.create(
             flexDirection: "row",
         },
         lastMessage: {
-            color: "white"
+            color: "white",
+            width: 170
         },
         container:{
-            borderBottomColor: "#b30404",
             borderBottomWidth: 0.22,
+            borderBottomColor: "#272525",
             flexDirection: "row",
             justifyContent: "space-between",
             padding: 10,
-            width: "100%"
+            width: "100%",
+            margin: 5
         },
         timestamp: {
-            color: "white"
+            color: "grey",
+            fontSize: 12,
+
         }
     }
 )

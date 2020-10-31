@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Image} from "react-native";
 import styles from "./styles";
 import {ChatRoom} from "../../types"
+import moment from "moment";
 
 export type ChatListBoxProps= {
     chatRoom: ChatRoom
@@ -29,7 +30,9 @@ const ChatListBox= (props: ChatRoom) => {
                         {user.name}
                     </Text>
 
-                    <Text 
+                    <Text
+                        numberOfLines={1}
+                        ellipsizeMode="tail" 
                         style={styles.lastMessage}>
                             {chatRoom.lastMessage.content}
                     </Text>
@@ -38,7 +41,7 @@ const ChatListBox= (props: ChatRoom) => {
             </View>
             
             <Text style={styles.timestamp}>
-                Today
+                {moment(chatRoom.lastMessage.createdAt).format("MMM.DD.YY")}
             </Text>
         </View>
     )
