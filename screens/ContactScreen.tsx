@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
-
+import { StyleSheet, FlatList } from 'react-native';
+import ContactBox from '../components/Contacts';
+import contacts from "../data/Contacts"
 import { Text, View } from '../components/Themed';
-
-export default function TabTwoScreen() {
+export default function ContactScreen() {
   return (
-    <View style={styles.container}>
-      
-    </View>
+    <FlatList
+    data={contacts}
+    renderItem={({item})=><ContactBox contact={item}/>}
+    />
   );
 }
 

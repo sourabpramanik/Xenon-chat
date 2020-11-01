@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/ChatScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
+import ContactScreen from '../screens/ContactScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -20,14 +20,14 @@ export default function BottomTabNavigator() {
         name="Chats"
         component={TabOneNavigator}
         options={{
-          tabBarIcon: ({ color }) => <Ionicons name="ios-chatbubbles" size={28} color= {color} />,
+          tabBarIcon: ({ color }) => <Ionicons name="ios-chatbubbles" size={30} color= {color} />,
         }}
       />
       <BottomTab.Screen
         name="Contacts"
-        component={TabTwoNavigator}
+        component={ContactScreen}
         options={{
-          tabBarIcon: ({ color }) => <Ionicons name="ios-contacts" size={28} color={color}/>,
+          tabBarIcon: ({ color }) => <Ionicons name="ios-contacts" size={30} color={color}/>,
         }}
       />
 
@@ -56,13 +56,12 @@ function TabOneNavigator() {
 }
 
 const TabTwoStack = createStackNavigator<TabTwoParamList>();
-
 function TabTwoNavigator() {
   return (
     <TabTwoStack.Navigator>
       <TabTwoStack.Screen
-        name="TabTwoScreen"
-        component={TabTwoScreen}
+        name="ContactScreen"
+        component={ContactScreen}
         options={{ headerTitle: 'Tab Two Title' }}
       />
     </TabTwoStack.Navigator>

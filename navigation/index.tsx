@@ -3,6 +3,7 @@ import { createStackNavigator, HeaderTitle } from '@react-navigation/stack';
 import * as React from 'react';
 import { ColorSchemeName, Image } from 'react-native';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
+import ContactScreen from '../screens/ContactScreen';
 import { RootStackParamList } from '../types';
 import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
@@ -52,6 +53,11 @@ function RootNavigator() {
         options= {({route})=> (
           {title: route.params.name}
         )} 
+      />
+      <Stack.Screen 
+        name="Contact" 
+        component={ContactScreen}
+        options= {{title:"Contact"}}
       />
     </Stack.Navigator>
   );

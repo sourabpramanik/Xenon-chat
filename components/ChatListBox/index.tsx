@@ -9,7 +9,7 @@ export type ChatListBoxProps= {
     chatRoom: ChatRoom
 }
 
-const ChatListBox= (props: ChatRoom) => {
+const ChatListBox= (props: ChatListBoxProps) => {
 
     const navigation = useNavigation();
     const {chatRoom} = props;
