@@ -1,15 +1,20 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-xenonchat-dev-12316-authRole",
-      "UnauthRoleArn": "arn:aws:iam::965543882171:role/amplify-xenonchat-dev-12316-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::965543882171:role/amplify-xenonchat-dev-12316-authRole",
+      "AuthRoleName": "amplify-xenonchat-dev-21002-authRole",
+      "UnauthRoleArn": "arn:aws:iam::965543882171:role/amplify-xenonchat-dev-21002-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::965543882171:role/amplify-xenonchat-dev-21002-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-xenonchat-dev-12316-deployment",
-      "UnauthRoleName": "amplify-xenonchat-dev-12316-unauthRole",
-      "StackName": "amplify-xenonchat-dev-12316",
-      "StackId": "arn:aws:cloudformation:us-east-1:965543882171:stack/amplify-xenonchat-dev-12316/10de5fd0-1d45-11eb-b32c-0e1c7f65113d",
-      "AmplifyAppId": "d3e0b9o29ae3e7"
+      "DeploymentBucketName": "amplify-xenonchat-dev-21002-deployment",
+      "UnauthRoleName": "amplify-xenonchat-dev-21002-unauthRole",
+      "StackName": "amplify-xenonchat-dev-21002",
+      "StackId": "arn:aws:cloudformation:us-east-1:965543882171:stack/amplify-xenonchat-dev-21002/99a76810-1d4b-11eb-841f-127c6c2d7f71",
+      "AmplifyAppId": "d1bxmjwka1h9i3"
+    },
+    "categories": {
+      "auth": {
+        "xenonchat9ba3f2b4": {}
+      }
     }
   }
 }

@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "xenonchat9ba3f2b4": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
