@@ -8,6 +8,7 @@ export default function ContactScreen() {
     <FlatList
     data={contacts}
     renderItem={({item})=><ContactBox contact={item}/>}
+    keyExtractor={(item)=>item.id}
     />
   );
 }
