@@ -1,6 +1,6 @@
 {
   "auth": {
-    "xenonchat9ba3f2b4": {
+    "xenonchate98f77bd": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

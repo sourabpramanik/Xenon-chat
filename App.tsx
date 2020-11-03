@@ -10,6 +10,8 @@ import { withAuthenticator } from 'aws-amplify-react-native'
 
 
 Amplify.configure(config)
+
+
 function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();

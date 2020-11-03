@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "xenonchat9ba3f2b4_identitypool_9ba3f2b4",
+    "identityPoolName": "xenonchate98f77bd_identitypool_e98f77bd",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "xenonc9ba3f2b4",
-    "userPoolName": "xenonchat9ba3f2b4_userpool_9ba3f2b4",
+    "resourceNameTruncated": "xenonce98f77bd",
+    "userPoolName": "xenonchate98f77bd_userpool_e98f77bd",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "xenonc9ba3f2b4_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "xenonce98f77bd_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "9ba3f2b4",
-    "resourceName": "xenonchat9ba3f2b4",
+    "sharedId": "e98f77bd",
+    "resourceName": "xenonchate98f77bd",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
